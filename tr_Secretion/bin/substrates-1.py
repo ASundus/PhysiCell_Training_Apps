@@ -1137,7 +1137,11 @@ class SubstrateTab(object):
             self.svg_frame = frame
             # print('plot_svg with frame=',self.svg_frame)
             self.plot_svg(self.svg_frame)
-        plt.savefig(self.i_plot)
+            self.fig.savefig("final_frame.png", dpi=300)
+       
+
+    
+
         # plt.subplot(grid[2, 0])
         # oxy_ax = self.fig.add_subplot(grid[2:, 0:1])
         #oxy_ax = self.fig.add_subplot(grid[:2, 2:])
